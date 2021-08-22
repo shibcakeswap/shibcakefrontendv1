@@ -6,7 +6,7 @@ import { getAddress } from 'utils/addressHelpers'
 import { useTranslation } from 'contexts/Localization'
 import { WrappedTokenInfo } from 'state/lists/hooks'
 import SwapWarningTokensConfig from 'config/constants/swapWarningTokens'
-import SafemoonWarning from './SafemoonWarning'
+import ShibcakeWarning from './ShibcakeWarning'
 import BondlyWarning from './BondlyWarning'
 import Acknowledgement from './Acknowledgement'
 
@@ -51,9 +51,9 @@ const SwapWarningModal: React.FC<SwapWarningModalProps> = ({ swapCurrency, onDis
   usePreventModalOverlayClick()
 
   const TOKEN_WARNINGS = {
-    [getAddress(SwapWarningTokensConfig.safemoon.address)]: {
-      symbol: SwapWarningTokensConfig.safemoon.symbol,
-      component: <SafemoonWarning />,
+    [getAddress(SwapWarningTokensConfig.shibcake.address)]: {
+      symbol: SwapWarningTokensConfig.shibcake.symbol,
+      component: <ShibcakeWarning />,
     },
     [getAddress(SwapWarningTokensConfig.bondly.address)]: {
       symbol: SwapWarningTokensConfig.bondly.symbol,
