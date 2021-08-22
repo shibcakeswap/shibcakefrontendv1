@@ -3,17 +3,17 @@ import { ChainId, Token } from '@pancakeswap/sdk'
 export const CAKE: { [chainId: number]: Token } = {
   [ChainId.MAINNET]: new Token(
     ChainId.MAINNET,
-    '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
+    '0x818CEE824f8CaEAa05Fb6a1f195935e364D52Af0',
     18,
     'CAKE',
-    'PancakeSwap Token',
+    'ShibcakeSwap Token',
   ),
   [ChainId.TESTNET]: new Token(
     ChainId.TESTNET,
-    '0xa35062141Fa33BCA92Ce69FeD37D0E8908868AAe',
+    '0x818CEE824f8CaEAa05Fb6a1f195935e364D52Af0',
     18,
     'CAKE',
-    'PancakeSwap Token',
+    'ShibcakeSwap Token',
   ),
 }
 export const BUSD: { [chainId: number]: Token } = {
@@ -67,11 +67,83 @@ const tokens = {
   cake: {
     symbol: 'CAKE',
     address: {
-      56: '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
-      97: '0xa35062141Fa33BCA92Ce69FeD37D0E8908868AAe',
+      56: '0x818CEE824f8CaEAa05Fb6a1f195935e364D52Af0',
+      97: '0x818CEE824f8CaEAa05Fb6a1f195935e364D52Af0',
     },
     decimals: 18,
-    projectLink: 'https://pancakeswap.finance/',
+    projectLink: 'https://shibcakeswap.com/',
+  },
+  babycake: {
+    symbol: 'BABYCAKE',
+    address: {
+      56: '0xdB8D30b74bf098aF214e862C90E647bbB1fcC58c',
+      97: '',
+    },
+    decimals: 18,
+    projectLink: 'https://babycake.app/',
+  },
+  bmon: {
+    symbol: 'BMON',
+    address: {
+      56: '0x08ba0619b1e7A582E0BCe5BBE9843322C954C340',
+      97: '',
+    },
+    decimals: 18,
+    projectLink: 'https://binamon.org/',
+  },
+  safemoon: {
+    symbol: 'SAFEMOON',
+    address: {
+      56: '0x8076C74C5e3F5852037F31Ff0093Eeb8c8ADd8D3',
+      97: '',
+    },
+    decimals: 9,
+    projectLink: 'https://safemoon.net/',
+  },
+  hero: {
+    symbol: 'HERO',
+    address: {
+      56: '0xD40bEDb44C081D2935eebA6eF5a3c8A31A1bBE13',
+      97: '',
+    },
+    decimals: 18,
+    projectLink: 'https://metahero.io/',
+  },
+  wsg: {
+    symbol: 'WSG',
+    address: {
+      56: '0xA58950F05FeA2277d2608748412bf9F802eA4901',
+      97: '',
+    },
+    decimals: 18,
+    projectLink: 'https://wsg.gg/',
+  },
+  mcrn: {
+    symbol: 'MCRN',
+    address: {
+      56: '0xacb2d47827C9813AE26De80965845D80935afd0B',
+      97: '',
+    },
+    decimals: 18,
+    projectLink: 'https://www.macaronswap.finance/',
+  },
+  revv: {
+    symbol: 'REVV',
+    address: {
+      56: '0x833f307ac507d47309fd8cdd1f835bef8d702a93',
+      97: '',
+    },
+    decimals: 18,
+    projectLink: 'https://revvmotorsport.com/',
+  },
+  skill: {
+    symbol: 'SKILL',
+    address: {
+      56: '0x154A9F9cbd3449AD22FDaE23044319D6eF2a1Fab',
+      97: '',
+    },
+    decimals: 18,
+    projectLink: 'https://www.cryptoblades.io/',
   },
   if: {
     symbol: 'IF',
@@ -611,7 +683,7 @@ const tokens = {
       97: '0xae13d989dac2f0debff460ac112a837c89baa7cd',
     },
     decimals: 18,
-    projectLink: 'https://pancakeswap.finance/',
+    projectLink: 'https://shibcakeswap.com/',
   },
   blink: {
     symbol: 'BLINK',
@@ -751,11 +823,11 @@ const tokens = {
   syrup: {
     symbol: 'SYRUP',
     address: {
-      56: '0x009cF7bC57584b7998236eff51b98A168DceA9B0',
-      97: '0xfE1e507CeB712BDe086f3579d2c03248b2dB77f9',
+      56: '0x36b51082acBFc4E372748847F02e22B4F7233Ed1',
+      97: '0x36b51082acBFc4E372748847F02e22B4F7233Ed1',
     },
     decimals: 18,
-    projectLink: 'https://pancakeswap.finance/',
+    projectLink: 'https://shibcakeswap.com/',
   },
   bifi: {
     symbol: 'BIFI',
@@ -1774,14 +1846,14 @@ const tokens = {
     decimals: 18,
     projectLink: 'https://decentral.games/',
   },
-  safemoon: {
-    symbol: 'SAFEMOON',
+  shibcake: {
+    symbol: 'SHIBCAKE',
     address: {
-      56: '0x8076C74C5e3F5852037F31Ff0093Eeb8c8ADd8D3',
+      56: '0x90bdF238674569684a34F3AF8a3F55f08088bc98',
       97: '',
     },
-    decimals: 9,
-    projectLink: 'https://safemoon.net/',
+    decimals: 18,
+    projectLink: 'https://shibcake.com/',
   },
   axs: {
     symbol: 'AXS',
@@ -1800,6 +1872,15 @@ const tokens = {
     },
     decimals: 18,
     projectLink: 'https://coin98.com/',
+  },
+  pots: {
+    symbol: 'POTS',
+    address: {
+      56: '0x3Fcca8648651E5b974DD6d3e50F61567779772A8',
+      97: '',
+    },
+    decimals: 18,
+    projectLink: 'https://moonpot.com/',
   },
 }
 
